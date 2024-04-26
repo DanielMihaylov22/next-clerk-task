@@ -13,10 +13,10 @@ export default function DashboardPage() {
     <main>
       <SignedOut>
         <div className={textStyle}>Hello</div>
-        <div className={textStyle}>Welcome to Daniel's Dashboard, please Sign in to view the Dashboard</div>
+        <div className={textStyle}>Welcome to Daniels Dashboard, please Sign in to view the Dashboard</div>
       </SignedOut>
       <SignedIn>
-        <h1 className={textStyle}>Welcome to Daniel's Dashboard</h1>
+        <h1 className={textStyle}>Welcome to Daniels Dashboard</h1>
       </SignedIn>
     </main>
   );
