@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Inter as FontSans } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import TopNav from "@/components/topnav";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({
           fontSans.variable
         )}>
           <div className="grid h-screen grid-rows-[auto_1fr]">
-            <div>asd</div>
+            <TopNav />
             <main className="overflow-y-scroll">{children}</main>
           </div>
           <div id="modal-root" />
