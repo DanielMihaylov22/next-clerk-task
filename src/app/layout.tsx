@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css/globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 import { Inter as FontSans } from "next/font/google";
 
@@ -22,15 +23,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
+    <ClerkProvider>
+      <html lang="en">
+        <body className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
-        )}
-      >
-        {children}
-      </body>
-    </html>
+        )}>
+          <div className="grid h-screen grid-rows-[auto_1fr]">
+            <div>asd</div>
+            <main className="overflow-y-scroll">{children}</main>
+          </div>
+          <div id="modal-root" />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
