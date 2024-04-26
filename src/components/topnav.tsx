@@ -11,7 +11,7 @@ export default function TopNav() {
   return (
     <nav className="flex w-full items-center justify-between p-4 text-xl font-semibold border-b">
       <div className="padding-2">
-        Daniel's Dashboard
+        Daniels Dashboard
         <div>
           <Link href="/">
             <Button>Home</Button>
