@@ -12,7 +12,7 @@ export default function DashboardPage() {
   return (
     <main>
       <SignedOut>
-        <div className={textStyle}>Hello</div>
+        <div className={textStyle}>Hello!</div>
         <div className={textStyle}>Welcome to Daniels Dashboard, please Sign in to view the Dashboard</div>
       </SignedOut>
       <SignedIn>
