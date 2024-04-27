@@ -13,10 +13,10 @@ export default function TopNav() {
       <div className="padding-2">
         Daniels Dashboard
         <div>
-          <Link href="/">
-            <Button>Home</Button>
-          </Link>
           <SignedIn>
+            <Link href="/">
+              <Button>Home</Button>
+            </Link>
             <Link href="/dashboard">
               <Button>Dashboard</Button>
             </Link>
